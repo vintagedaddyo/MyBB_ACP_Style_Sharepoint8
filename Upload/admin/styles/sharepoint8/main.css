@@ -37,7 +37,7 @@ a:hover {
 }
 
 #logo h1 {
-	background: #FFF url('images/logo.png') 15px 15px no-repeat;
+	background: #FFF url('images/logo.png') 15px 15px no-repeat; 
 	height: 90px;
 	margin: 0 0 0px 0;
 	padding: 3px;
@@ -1231,4 +1231,208 @@ input.search_button {
 
 .cm-s-mybb .CodeMirror-linenumber {
 
+}
+
+/* Custom browser scrollbar (webkit browsers only), you may remove. It won't hurt anything. */
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #E2EFFF;
+}
+
+::-webkit-scrollbar-track {
+	background: #F9FCFF;
+}
+
+/* END: Custom Scrollbar */
+
+
+/* Mobile Tweaks */
+
+@media only screen and (max-width: 868px) {
+
+#inner {
+	padding: 2px 2px;
+	/*padding: 10px 15px;	*/
+}
+
+.form_row {
+  margin: 10px 30px;
+  /*margin: 10px 30px;  */
+}
+
+	.nav_tabs {
+		font-size:  85%;
+		display:  block;
+	}
+	
+    #left_menu {
+       	margin-top: 10px;
+        float: none !important;
+        display: inline-block;
+        width: 100%;
+    }
+    
+    #content {
+        float: left !important;
+        display: block;
+        width: 97%;
+        /*padding: 5px 5px;*/
+        margin: 0;
+        /*margin-left: 0px !important; */       
+        margin-left: 5px !important;
+    }
+    
+    #logo h1 {
+    	padding-bottom: 20px;
+        padding-top: 0px;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        background: #fff url('images/logo.png') 15px 40px no-repeat !important;
+        text-align: center !important;
+        float: none !important;
+        left: 0px;
+        right: 0px;
+        top: 10px;
+    }
+    
+    .float_right {
+        float: none !important;
+        display: inline;
+    }
+    
+    .float_left {
+        float: none !important;
+        display: inline;
+    }
+    
+    table.general th {
+        display: none;     
+    }
+    
+    #welcome {
+        padding: 10px;
+        text-align: left !important;
+        float: none !important;
+        margin: auto auto;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+    }
+    
+    table.general {
+        background: transparent;
+/*        text-align: center !important; */
+        text-align: left !important;
+        float: none !important;
+/*        display: block !important; */
+/*        width: auto; */
+         width: 100%;
+    }
+    
+    table.general td {
+        width: 99% !important;
+        background: transparent;
+        padding: 3px;
+/*        text-align: center !important; */
+        text-align: left !important;
+        float: none !important;
+/*        display: block !important; */
+        border-top: 0px !important;
+        border-left: 0px !important;
+        border-bottom: 1px solid: #646464;
+    }
+    
+    #menu ul {
+        margin: 0;
+        padding: 5px 5px 0;
+        margin-bottom: 10px;
+    }
+    
+    .nav_tabs li.active a {
+        /*font-size: 110%;*/
+        font-size: 100%;        
+        font-weight: bold;
+    }
+    
+    .nav_tabs li a {
+        font-family: 'Lucida Grande', 'Trebuchet MS', Verdana, Sans-Serif;
+        /*font-size: 110%;*/
+        font-size: 100%;
+    }
+    
+    #footer .generation {
+        text-align: center !important;
+        float: none !important;
+        margin: auto auto;
+    }
+    
+    #footer .powered {
+        text-align: center !important;
+        float: none !important;
+        margin: auto auto;
+    }
+
+    #footer p {
+        border-top: 0px;
+    }
+
+    .border_wrapper {
+        background: #f1f1f1;
+        width: auto;
+    }
+
+    #menu li a.active {
+    	/*border-radius: 3px; */
+    	border-bottom: 1px solid #7AA4DB;
+    	/*border-bottom: 1px solid #ccc; */
+    }
+
+    input.text_input {
+    	min-width: 30px !important;
+    	max-width: 100px;
+    }
+
+    textarea {
+        width: 97% !important;
+    }
+
+    ul.tabs li a.active  {
+ /*   	-webkit-border-radius: 5px 5px 5px 5px !important; */
+    }     
+
+    #page {
+	    background: #FFFFFF !important;
+    }
+    #menu {
+    	margin-bottom: 3px;
+    }
+    #menu ul {
+    /*	background: #EFEFEF !important; */
+        padding: unset;
+    }  
+
+    .form_button_wrapper {
+    	margin-bottom: 10px;
+    } 
+
+    .quick_perm_fields .enabled, .quick_perm_fields .disabled {
+	   width: 100%  !important;
+    }
+
+    .quick_perm_fields .enabled {
+	   margin-top: 4px;
+       border-top: 3px solid red !important;
+       border-right: 0px solid red !important;    
+    }
+
+    .quick_perm_fields .disabled {
+	   margin-top: 4px;
+       border-top: 3px solid green !important;
+       border-right: 0px solid green !important;    
+     } 
+   
 }
